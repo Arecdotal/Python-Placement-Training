@@ -1,0 +1,17 @@
+lst = eval(input("Enter the list : "))
+max, count = 0, 0
+#Empty = 0
+#Booked = 1
+
+for i in lst:
+    if i == 0:
+        count += 1
+    else:    
+        if count > max:
+            max = count
+        count = 0
+        
+if count > max:
+    max = count
+    
+print(max)
